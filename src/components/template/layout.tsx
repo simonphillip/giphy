@@ -21,19 +21,19 @@ const Layout: React.FC<{
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header
-        className={`${inter.className} w-full mt-24 max-w-6xl mx-auto flex gap-x-3`}
-      >
-        <h1
-          className="text-6xl cursor-pointer font-bold"
-          onClick={handleOnFakeLogoClick}
-        >
-          GIF
-        </h1>
-        <SearchInput />
+      <header className={`${inter.className} w-full pt-24 bg-custom-rose`}>
+        <div className="flex gap-x-3 max-w-6xl mx-auto">
+          <h1
+            className="text-6xl cursor-pointer font-bold text-custom-wenge"
+            onClick={handleOnFakeLogoClick}
+          >
+            GIF
+          </h1>
+          <SearchInput />
+        </div>
       </header>
       <main
-        className={`${inter.className} flex min-h-screen flex-col py-12 px-24`}
+        className={`${inter.className} flex min-h-screen flex-col py-12 px-24 bg-custom-rose`}
       >
         {children}
       </main>

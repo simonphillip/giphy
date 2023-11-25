@@ -37,7 +37,9 @@ export default function Search() {
         <p>Loading...</p>
       ) : (
         <>
-          <h1 className="text-5xl mb-3 font-semibold">Search Results</h1>
+          <h1 className="text-5xl mb-3 font-semibold text-custom-wenge">
+            Search Results
+          </h1>
           <section className="md:columns-2 lg:columns-3 xl:columns-4">
             {data?.map((gif: IGif) => (
               <GifImageCard key={gif.id} gif={gif} />

@@ -27,7 +27,7 @@ const SearchInput: React.FC = () => {
         className="rounded-l-md rounded-r-none py-3 w-full px-4"
       />
       <button
-        className="border border-gray-100 px-4"
+        className="border border-gray-100 px-4 bg-white hover:bg-gray-100"
         onClick={handleOnSearchClick}
         aria-label="Search icon"
       >
